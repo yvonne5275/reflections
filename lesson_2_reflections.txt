@@ -11,14 +11,26 @@ you can later commit them in a single commit.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+you can use git diff --staged to compare the staging area to the most recent commit
+in the repository.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+You can use branches when to wnat to create a branch to experiment on without
+doing your experiments in the main branch. You may also want to branch to create
+a new version of the code base for a new release.  Branches help to keep the
+new changes separate from the main branch until you decide to merge the changes.
 
 How do the diagrams help you visualize the branch structure?
+Diagrams help you see where from the master branch other branches start. Also helps
+you to see if any commits are unreachable.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+Merging two branches together to create a new master that contains both the changes
+made to the branch and any changes to the master from the time of the branch to
+the time of the merge. In the diagram it is clear to see what is going on and it
+helps to visually understand the mege.
 
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
